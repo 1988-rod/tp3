@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Pastas</title>
+    <link rel="stylesheet" href="./index.css"> 
+</head>
+<body>
+    <h1>"La Bella Napoli"</h1>
+    <h2>Menú de Pastas.</h2>
+    <form id="form">
+        <label for="plato">Plato:</label>
+        <select id="plato" required>
+            <option value="">Seleccione un plato</option>
+            <option value="Canelones">Canelones - $4500</option>
+            <option value="Sorrentinos">Sorrentinos - $4400</option>
+            <option value="Ravioles">Ravioles - $4000</option>
+            <option value="Ñoquis">Ñoquis - $3800</option>
+            <option value="Tallarines">Tallarines - $3500</option>
+        </select>
+        
+        <label for="salsa">Salsa:</label>
+        <select id="salsa" required>
+            <option value="">Seleccione una salsa</option>
+            <option value="Tuco">Tuco - $2000</option>
+            <option value="Crema">Crema - $3000</option>
+            <option value="Mixta">Mixta - $2700</option>
+        </select>
+
+        <button type="submit">Agregar al Carrito</button>
+    </form>
+
+    <h2>Carrito:</h2>
+    <ul id="carrito"></ul>
+    <h3>Precio final de su pedido:</h3>
+    <h4 id="total">Total: $0</h4>
+
+    <script src="./main.js"></script>
+</body>
+</html>
